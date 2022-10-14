@@ -1,0 +1,50 @@
+.social {
+    @include list;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__link {
+        @include link;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--bgd-white-color);
+        transition: background-color var(--trans);
+    }
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--t-accent-color);
+    }
+    &__icon {
+        fill: var(--i-main-color);
+        transition: fill var(--trans);
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: var(--t-light-color);
+    }
+
+    // Social-links - footer
+    &__link--bgr {
+        background-color: var(--bgd-gray-color);
+        transition: background-color var(--trans);
+    }
+    &__link--bgr:hover,
+    &__link--bgr:focus {
+        background-color: var(--t-accent-color);
+    }
+    &__icon--fill {
+        fill: var(--i--white-color);
+        transition: fill var(--trans);
+    }
+    &__item:hover &__icon--fill,
+    &__item:focus &__icon--fill {
+        fill: var(--t-light-color);
+    }
+}

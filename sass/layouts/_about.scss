@@ -1,0 +1,92 @@
+.about {
+    @include section;
+    
+    // desktop styles
+    @media screen and (min-width:1200px) {
+        @include section(94px);
+    }
+
+    &__list {
+        @include list;
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        // tablet styles
+    @media screen and (min-width:768px) {
+        
+    }
+        
+    // desktop styles
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+    }
+    &__item { 
+    }
+    /*
+    .about-item::before {
+        display: block;
+        content: " ";
+        height: 120px ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--bgd-cinereous-color);
+    }
+    .icon-antenna::before {
+        background-image: url(../images/icons/antenna.svg);
+    }
+    .icon-astronaut::before {
+        background-image: url(../images/icons/astronaut.svg);
+    } 
+    .icon-clock::before {
+        background-image: url(../images/icons/clock.svg);
+    } 
+    .icon-diagram::before {
+        background-image: url(../images/icons/diagram.svg);
+    } 
+    */
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 450px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: var(--bgd-cinereous-color);
+        border-radius: 4px;
+        
+        // tablet styles
+        @media screen and (min-width:768px) {
+            width: 354px;
+    }
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    &__text {
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
+        color: var(--t-secondary-color);
+
+        // tablet styles
+        @media screen and (min-width:768px) {
+            width: 354px;
+    }
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+    }
+}

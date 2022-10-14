@@ -1,0 +1,84 @@
+.clients {
+    @include section;
+
+    // desktop styles
+    @media screen and (min-width:1200px) {
+        @include section(94px);
+    }
+    
+    &__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: calc(33 / 28);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--t-primary-color);
+
+        // tablet styles
+        @media screen and (min-width:768px) {
+        }
+        
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: calc(42 / 36);
+        }
+    }
+    &__list {
+        @include list;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        // tablet styles
+        @media screen and (min-width:768px) {
+        }
+        
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+        }
+    }
+    &__link {
+        @include link;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 210px;
+        height: 92px;
+        background-color: var(--bgd-white-color);
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        transition: border var(--trans);
+
+        // mobil-320 styles
+        @media screen and (max-width:479px) {
+            width: 100%;
+        }
+        // tablet styles
+        @media screen and (min-width:768px) {
+            width: 226px;
+        }
+        
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            width: 170px;
+        }
+    }
+    &__link:hover,
+    &__link:focus {
+        border: 1px solid var(--t-accent-color);
+    }
+    &__icon {
+        fill: var(--i-main-color);
+        transition: var(--trans);
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: var(--t-accent-color);
+    }
+}

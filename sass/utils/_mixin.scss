@@ -1,0 +1,19 @@
+@mixin section ($padding:60px) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+@mixin link {
+    text-decoration: none;
+    color: currentColor;
+}
+@mixin img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

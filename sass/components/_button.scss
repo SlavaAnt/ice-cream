@@ -1,0 +1,83 @@
+.button {
+    display: flex;
+    padding: 10px 0;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--t-light-color);
+    background-color: var(--bgd-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &__hero {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        gap: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }     
+    &__icon {
+        fill: var(--i--white-color);
+    } 
+
+    // Portfolio - filters - button
+
+    &__pf {
+        padding: 6px 25px;
+        height: 38px;
+        font-weight: 500;
+        line-height: calc(26 / 16);
+        letter-spacing: 0.03em;
+        color: inherit;
+        background-color: var(--bgd-cinereous-color);
+        box-shadow: none;
+        transition: color var(--trans), background-color var(--trans), box-shadow var(--trans), border-radius var(--trans);
+    }
+    &__pf:hover,
+    &__pf:focus {
+        color: var(--t-light-color);
+        background-color: var(--t-accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    // Modal-window - button-sent
+        
+    &__modal-sent {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 52px;
+        padding-right: 52px;
+        transition: outline-color var(--trans);
+
+    /* width: 200px; */
+    }
+    &__modal-sent:focus {
+        outline-color: var(--br-accent-color);
+    }
+}

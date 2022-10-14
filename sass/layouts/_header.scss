@@ -1,0 +1,30 @@
+.header {
+    border-bottom: 1px solid var(--br-header-light-color);
+    border: 1px solid #ececec;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.menu__button {
+    @media screen and (max-width:767px) {
+        fill: var(--i-dark-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width:768px) {
+            display: none;
+    }
+}

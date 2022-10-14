@@ -1,0 +1,68 @@
+.hero {
+    @include section(118px);
+
+    // desktop styles
+    @media screen and (min-width:1200px) {
+        @include section(200px);
+    }
+
+    background-color: var(--bgd-secondary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    // fon-image - mobile
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon/hero-fon_m@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon/hero-fon_m@2x.jpg);
+    }
+
+    // fon-image - tablet
+
+    @media screen and (min-width:481px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon/hero-fon_t@1x.jpg);
+        
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon/hero-fon_t@2x.jpg);
+        }
+    }
+    
+    // fon-image - desktop
+
+    @media screen and (min-width:769px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon/hero-fon_d@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon/hero-fon_d@2x.jpg);
+        }
+    } 
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42 / 26);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--t-light-color);
+
+        // tablet styles
+        @media screen and (min-width:768px) {
+            width: 360px;
+        }
+        
+        // desktop styles
+        @media screen and (min-width:1200px) {
+            width: 696px;
+            font-size: 44px;
+            line-height: calc(60 / 44);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+:root {
+    /* Font families */
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+
+    /* Text colors */
+    --t-accent-color: #2196f3;
+    --t-primary-color: #212121;
+    --t-secondary-color: #757575;
+    --t-light-color: #ffffff;
+    --t-logo-black-color: #000000;
+    --t-gray-color: rgba(255, 255, 255, 0.6);
+    --t-modal-comments: rgba(117, 117, 117, 0.5);
+
+    /* Icons */
+    --i-main-color: #AFB1B8;
+    --i-secondary-color: #757575;
+    --i--white-color: #ffffff;
+    --i-dark-color: #212121;
+    --i-black-color: #000000;
+
+    /* Background colors*/
+    --bgd-white-color: #ffffff;
+    --bgd-accent-color: #2196f3;
+    --bgd-primary-color: #f5f5f5;
+    --bgd-secondary-color: #2f303a;
+    --bgd-cinereous-color: #f5f4fa;
+    --bgd-gray-color: rgba(255, 255, 255, 0.1);
+    --bgr-modal-black: rgba(0, 0, 0, 0.4);
+    --bgr-overlay: rgba(33, 150, 243, 0.9);
+    --bgr-fon-text: rgba(47, 48, 58, 0.8);
+
+    /* Border colors*/
+    --br-header-light-color: #ececec;
+    --br-pf-light-gray-color: #eeeeee;
+    --br-accent-color: #2196f3;
+    --br-modal-gray-color: rgba(33, 33, 33, 0.2);
+    --br-modal-bt-color: rgba(0, 0, 0, 0.1);
+
+    /* Animations */
+    --trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Наявні кольори на сторінці "Студіо" */
+/*--color: #2F303A;
+    /*--color: #FFFFFF 60%;
+
+/* Наявні кольори на сторінці "Портфоліо" */
+/*--color: #EEEEEE;
+    /*--color: #FFFFFF 60%;
+    /*--color: #2F303A; */
